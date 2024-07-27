@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #D8EFD3;
+}
+
+header {
+  width: 100%;
+  padding: 30px 0;
+  background-color: cadetblue;
+  position: sticky;
+  top: 0px;
+
+}
+
+.unordered-list {
+  text-align: center;
+}
+
+.unordered-list li {
+  display: inline-block;
+}
+
+li a {
+  margin-right: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(54, 60, 68);
+  color: rgb(54, 60, 68);
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+li a:hover {
+  color: rgb(255, 255, 255);
+  border-bottom: none;
+  border-top: 1px solid rgb(255, 255, 255);
+  padding-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(54, 60, 68);
+}
+
+/* portfolio page css */
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.main {
+  padding-top: 30px;
+  width: 90%;
+  margin: auto;
+}
+.main p{
+  font-size: 1.5rem;
+}
+
+.first {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 50px;
+}
+
+.first p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(54, 60, 68);
+  width: 60%;
+}
+
+.backtohome {
+  text-decoration: none;
+  color: rgb(54, 60, 68);
+  font-size: 1.3rem;
+}
+
+/* blogs page css */
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(54, 60, 68);
+}
+
+.para {
+  padding: 10px 15px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgb(54, 60, 68);
+}
+
+/* contact page */
+.Emaillink {
+  border-bottom: none;
+}
+
+.Emaillink:hover {
+  border-top: none;
+  color: #037e11;
+}
