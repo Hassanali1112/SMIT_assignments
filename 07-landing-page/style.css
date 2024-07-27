@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
+
+}
+
+.top {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid white;
+  color: #fff;
+
+}
+
+.top nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+  padding-bottom: 15px;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  width: 50%;
+  justify-content: space-between;
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.bottom {
+  padding: 50px 0;
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+}
+
+.bottom .left {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 90px;
+}
+
+.left h2 {
+  font-size: 3.2rem;
+  width: 90%;
+  word-spacing: -6px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.left p {
+  width: 90%;
+  font-size: .9rem;
+  line-height: 1.8rem;
+  padding-bottom: 20px;
+  color: #ffffff93;
+}
+
+.left .btn-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: rgba(248, 162, 1, 0.814);
+  padding: 20px 60px;
+  margin-bottom: 14px;
+}
+
+.left .created-card {
+  color: #fff;
+  display: flex;
+  align-items: center;
+
+}
+
+.left .created-card span {
+  width: 25px;
+  height: 25px;
+  border: 1px solid green;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+span img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bottom .right {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.right img {
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 10px;
+}
