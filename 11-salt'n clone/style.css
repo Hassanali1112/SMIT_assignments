@@ -399,6 +399,8 @@ body {
 
 .card-body {
   flex: 1;
+  width: 100%;
+  height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -407,6 +409,8 @@ body {
 
 .image {
   margin: 1rem 0;
+  width: 100%;
+  height: 100%;
 
 }
 
@@ -432,6 +436,56 @@ body {
 
 .row:nth-last-child(1) .card-body {
   max-width: 26rem;
+}
+
+/* village franchise section */
+.village-franchise {
+  max-width: 100%;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.village-franchise .village-details h2 {
+  font-size: 3.3rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.village-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.village-wrapper .left {
+  flex: 1;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.village-wrapper .right {
+  flex: 1;
+}
+
+.right .headingfont {
+  font-size: 3rem;
+}
+
+.right .newfont {
+  font-size: 1.35rem;
+
+}
+
+.right .direction-icon {
+  font-size: 1.2rem;
+  background-color: #28A745;
 }
 
 @media screen and (max-width : 992px) {
@@ -491,6 +545,13 @@ body {
   }
 
   /* franchises section */
+  .franchise .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .city-name {
     font-size: 1rem;
     margin-bottom: .5rem;
@@ -516,20 +577,23 @@ body {
   }
 
   /* express franchises section */
-  .express-franchises{
+  .express-franchises {
     padding: 0;
   }
-  .row{
+
+  .row {
     padding: 1rem 0;
   }
-  .express-top h2{
+
+  .express-top h2 {
     font-size: 2.8rem;
   }
 
   .row {
     flex-direction: column;
   }
-  .card-body{
+
+  .card-body {
     padding: 0;
   }
 
@@ -537,6 +601,25 @@ body {
     width: 100%;
     height: 100%;
     min-width: 15rem;
+  }
+
+  /* village franchie */
+  .right .newfont {
+    font-size: 1rem;
+  }
+
+  .right .headingfont {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width : 768px) {
+
+  /* village franchise section */
+  .village-wrapper {
+    max-width: 25rem;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }
 
@@ -595,5 +678,24 @@ body {
   .franchise,
   .franchise:nth-last-child(2) {
     flex-direction: column;
+  }
+
+  /* express franchise section */
+  .express-top h2 {
+    font-size: 2.3rem;
+  }
+
+  /* village franchie */
+  .village-franchise .village-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .right .headingfont {
+    font-size: 1.5rem;
+  }
+
+  .village-wrapper .right .newfont {
+    font-size: .9rem;
   }
 }
