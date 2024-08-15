@@ -223,7 +223,7 @@ body {
   overflow-x: hidden;
 }
 
-.about-bottom .card-body {
+.about-bottom .about-card-body {
   flex: 1;
   align-self: center;
   gap: 1.3rem;
@@ -231,7 +231,7 @@ body {
   margin-top: 1rem;
 }
 
-.card-body img {
+.about-card-body img {
   padding: 2rem;
   width: 100%;
   height: 100%;
@@ -240,7 +240,7 @@ body {
   background-color: #fff;
 }
 
-.card-body .card-btn {
+.about-card-body .card-btn {
   margin-top: 1.5rem;
   padding: 1rem 3.5rem;
   border: 1px solid #ffffff63;
@@ -347,7 +347,7 @@ body {
 
 .direction-icon {
   margin: 3rem 0 0 1rem;
-  padding: 1rem;
+  padding: 1rem 1.8rem;
   border: 1px solid rgba(255, 255, 255, 0.526);
   max-width: fit-content;
   font-size: 1rem;
@@ -356,6 +356,7 @@ body {
   gap: .5rem;
   text-transform: capitalize;
   border-radius: 2rem;
+  cursor: pointer;
 }
 
 .direction-icon i {
@@ -366,10 +367,71 @@ body {
   flex: 1;
 }
 
-.image img {
+.franch-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* express franchises section */
+.express-franchises {
+  background-color: #0D0D0D;
+  padding: 4rem;
+}
+
+.express-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.express-wrapper .express-top {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.row {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.card-body {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  margin: 1rem 0;
+
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  max-width: 26rem;
+  min-width: 15rem;
+  object-fit: cover;
+}
+
+.newfont {
+  font-size: 1rem;
+}
+
+.headingfont {
+  font-size: 1.7rem;
+}
+
+.row:nth-last-child(1) {
+  justify-content: center;
+}
+
+.row:nth-last-child(1) .card-body {
+  max-width: 26rem;
 }
 
 @media screen and (max-width : 992px) {
@@ -423,7 +485,7 @@ body {
     gap: 1rem;
   }
 
-  .card-body .card-btn {
+  .about-card-body .card-btn {
     padding: 1rem 1.5rem;
     font-size: 1rem;
   }
@@ -451,6 +513,30 @@ body {
   .direction-icon {
     margin: 2rem 0 0 1rem;
     font-size: .8rem;
+  }
+
+  /* express franchises section */
+  .express-franchises{
+    padding: 0;
+  }
+  .row{
+    padding: 1rem 0;
+  }
+  .express-top h2{
+    font-size: 2.8rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+  .card-body{
+    padding: 0;
+  }
+
+  .card-body img {
+    width: 100%;
+    height: 100%;
+    min-width: 15rem;
   }
 }
 
@@ -487,11 +573,11 @@ body {
     gap: 1rem;
   }
 
-  .card-body img {
+  .about-card-body img {
     min-width: 20rem;
   }
 
-  .card-body .card-btn {
+  .about-card-body .card-btn {
     padding: 1.5rem;
     font-size: 1.2rem;
     border-radius: 40px;
