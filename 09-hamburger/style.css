@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.container {
+.hamburger-menu {
   padding: 10px;
 }
 
@@ -58,11 +58,11 @@
   
 }
 
-ul {
+.hamburger-menu ul {
   width: 300px;
   height: 400px;
   position: relative;
-  bottom: 20px;
+  top: 130px;
   margin-left: 1 0px;
   display: flex;
   flex-direction: column;
