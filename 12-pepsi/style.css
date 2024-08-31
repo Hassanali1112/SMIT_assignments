@@ -1,9 +1,10 @@
+/* universal properties */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/* header section */
 .pepsi-navbar {
   display: flex;
   width: 100%;
@@ -11,7 +12,6 @@
   justify-content: space-between;
   background-color: rgb(6, 6, 6);
   align-items: center;
-  /* position: fixed; */
 }
 
 .logo {
@@ -66,7 +66,20 @@
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   display: none;
-  border: 1px solid red;
+}
+
+.check:checked~.items {
+  animation: slideInRight .4s ease-in-out forwards;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(600px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 .check {
@@ -113,3 +126,13 @@
   height: 100%;
   object-fit: cover;
 }
+/* hero section */
+.can-image{
+ height: 600px;
+ border: 1px solid yellow;
+ background: url(./images/can-2.webp) no-repeat ;
+ background-size: contain;
+ position: relative;
+ top: -80px;
+}
+
