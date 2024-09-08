@@ -3,7 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: PepsiOwner, sans-serif;
+}
+body{
+  background-color: #000000;
 }
 
 /* header section */
@@ -54,7 +57,7 @@
 
 .hamburger-menu ul {
   position: absolute;
-  width: 50vw;
+  width: 700px;
   height: 550px;
   top: 80px;
   right: 0px;
@@ -114,16 +117,6 @@
   transform: rotateZ(-48deg);
   position: relative;
   bottom: 53px;
-}
-
-.cross-btn {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  font-family: sans-serif;
-  color: #ffffff;
-  border: 1px solid red;
-  display: none;
 }
 
 .item {
@@ -238,4 +231,39 @@
 
 .hero-right .downarrow {
  color: #fFF;
+}
+@media screen and (max-width : 1024px) {
+  /* hero section */
+ .hero-section  {
+  height: auto;
+}
+.hero-left{
+  width: 100%;
+  animation: none;
+}
+}
+/* video section */
+
+.video-section {
+  width: 100%;
+  height: 100vh;
+  position: relative; 
+}
+.video-section .iframe{
+  width: 100%;
+  height: 100%;
+
+}
+.video-btn{
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: 900;
+  background-color: #0025FF;
+  color: #fff;
+  padding: .5rem 2rem;
+  border-radius: 60px;
+  text-transform: uppercase;
 }
