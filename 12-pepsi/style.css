@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
+
 /* header section */
 .pepsi-navbar {
   display: flex;
@@ -12,6 +14,9 @@
   justify-content: space-between;
   background-color: rgb(6, 6, 6);
   align-items: center;
+  z-index: 1;
+  position: sticky;
+  top: 100px;
 }
 
 .logo {
@@ -111,6 +116,16 @@
   bottom: 53px;
 }
 
+.cross-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-family: sans-serif;
+  color: #ffffff;
+  border: 1px solid red;
+  display: none;
+}
+
 .item {
   font-family: PepsiOwner, sans-serif;
   font-size: 2rem;
@@ -126,13 +141,101 @@
   height: 100%;
   object-fit: cover;
 }
+
 /* hero section */
-.can-image{
- height: 600px;
- border: 1px solid yellow;
- background: url(./images/can-2.webp) no-repeat ;
- background-size: contain;
- position: relative;
- top: -80px;
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
+.hero-left {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  top: -55px;
+  animation: moveCan 1s linear forwards;
+
+}
+
+.hero-left img {
+  max-width: 300px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.can-anim {
+  position: absolute;
+  top: 15%;
+  min-width: 470px;
+  min-height: 470px;
+  border-radius: 50%;
+  background: url(./images/pepsi-pulse-logo.gif) no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+}
+
+@keyframes moveCan {
+  0% {
+    transform: translateX(400px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+
+}
+
+.hero-right {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+  animation: slideInRight .8s linear forwards;
+}
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+  }
+  60%{
+    opacity: 0;
+  }
+  80%{
+    opacity: .50;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+}
+
+.hero-right .h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #0025FF;
+  letter-spacing: -4px;
+  stroke-width: 50px;
+  line-height: .7;
+}
+
+.hero-right .h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fFF;
+}
+
+.hero-right .h4 {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #fFF;
+}
+
+.hero-right .downarrow {
+ color: #fFF;
+}
